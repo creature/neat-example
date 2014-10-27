@@ -17,3 +17,26 @@ article {
   background-color: #afa;
 }
 
+.row {
+  @include span-columns(12);
+  @include row(table);
+
+  border-bottom: 1px solid #aaa;
+
+  &.header {
+    font-weight: bold;
+  }
+}
+
+.adventurer {
+  @include span-columns(3);
+  @include pad();
+  background-color: #faa;
+}
+
+.details {
+  @include span-columns(9);
+  @include reset-display;
+  @include pad();
+  background-color: #afa;
+}
